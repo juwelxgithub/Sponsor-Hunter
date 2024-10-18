@@ -1,16 +1,23 @@
 package com.seu.sponsor_hunter.model;
 
+import javafx.scene.control.CheckBox;
+
 public class Influencer {
     private String name;
     private double price;
     private double follower;
     private String email;
+    private CheckBox select;
 
     public Influencer(String name, double follower, double price, String email) {
         this.name = name;
         this.price = price;
         this.follower = follower;
         this.email = email;
+    }
+
+    public static boolean getCheckBox(CheckBox select){
+        return select.isSelected();
     }
 
     public String getName() {

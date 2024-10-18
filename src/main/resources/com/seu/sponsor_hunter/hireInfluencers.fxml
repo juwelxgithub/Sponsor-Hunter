@@ -1,52 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.HireInfluencersController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" layoutX="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="300.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.729411780834198" green="0.32549020648002625" blue="0.43921568989753723" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.95686274766922" green="0.886274516582489" blue="0.8470588326454163" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
+      <Button alignment="CENTER" layoutX="686.0" layoutY="16.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Logout">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" onAction="#clickRegister" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Register as Influencer">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <TableView fx:id="influencerTableView" prefHeight="600.0" prefWidth="600.0">
+      <TableView fx:id="influencerTableView" layoutX="5.0" layoutY="70.0" prefHeight="395.0" prefWidth="889.0">
         <columns>
-          <TableColumn fx:id="nameCulomn" prefWidth="171.0" text="Name" />
-            <TableColumn fx:id="followerCulomn" prefWidth="98.0" text="Following" />
-            <TableColumn fx:id="priceCulomn" prefWidth="155.0" text="Charge" />
-          <TableColumn fx:id="emailCulomn" prefWidth="175.0" text="Email" />
+          <TableColumn fx:id="nameCulomn" prefWidth="256.7999815940857" text="Name" />
+            <TableColumn fx:id="followerCulomn" prefWidth="131.20004272460938" text="Following" />
+            <TableColumn fx:id="priceCulomn" prefWidth="141.60000610351562" text="Charge" />
+          <TableColumn fx:id="emailCulomn" prefWidth="296.7999267578125" text="Email" />
+            <TableColumn fx:id="checkBoxColumn" prefWidth="64.7999267578125" text="Select" />
         </columns>
       </TableView>
+      <Label layoutX="436.0" layoutY="28.0" text="Label" />
+      <Hyperlink layoutX="403.0" layoutY="553.0" onAction="#clickRegister" text="Register as Influencer" />
+      <Button alignment="CENTER" layoutX="364.0" layoutY="500.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Send Mail">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
