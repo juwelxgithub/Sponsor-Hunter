@@ -28,7 +28,7 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickHire" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
+      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickHire" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencers">
          <font>
             <Font size="16.0" />
          </font>

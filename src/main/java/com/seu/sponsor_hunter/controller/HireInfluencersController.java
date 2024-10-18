@@ -7,8 +7,8 @@ import javafx.fxml.FXML;
 public class HireInfluencersController {
 
     @FXML
-    void clickHire(ActionEvent event) {
-        Main.changeScene("hireInfluencers",900,600);
+    void clickRegister(ActionEvent event) {
+        Main.changeScene("influencerRegister",900,600);
     }
 
 }
