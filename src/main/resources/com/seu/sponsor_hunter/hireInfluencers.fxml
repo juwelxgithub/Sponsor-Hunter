@@ -43,7 +43,7 @@
       <TableView prefHeight="600.0" prefWidth="600.0">
         <columns>
           <TableColumn prefWidth="171.0" text="Name" />
-          <TableColumn prefWidth="175.0" text="Phone" />
+          <TableColumn prefWidth="175.0" text="Email" />
             <TableColumn prefWidth="98.0" text="Following" />
             <TableColumn prefWidth="155.0" text="Charge" />
         </columns>

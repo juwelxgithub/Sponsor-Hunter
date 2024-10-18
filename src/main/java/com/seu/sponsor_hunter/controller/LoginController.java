@@ -49,7 +49,7 @@ public class LoginController {
 
     @FXML
     void newAccount(ActionEvent event) {
-        Main.changeScene("signup",900,600);
+        Main.changeScene("signup",600,400);
     }
 
 }
