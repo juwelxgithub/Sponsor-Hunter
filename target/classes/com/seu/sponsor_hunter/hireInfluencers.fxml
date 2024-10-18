@@ -40,12 +40,12 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <TableView prefHeight="600.0" prefWidth="600.0">
+      <TableView fx:id="influencerTableView" prefHeight="600.0" prefWidth="600.0">
         <columns>
-          <TableColumn prefWidth="171.0" text="Name" />
-          <TableColumn prefWidth="175.0" text="Phone" />
-            <TableColumn prefWidth="98.0" text="Following" />
-            <TableColumn prefWidth="155.0" text="Charge" />
+          <TableColumn fx:id="nameCulomn" prefWidth="171.0" text="Name" />
+            <TableColumn fx:id="followerCulomn" prefWidth="98.0" text="Following" />
+            <TableColumn fx:id="priceCulomn" prefWidth="155.0" text="Charge" />
+          <TableColumn fx:id="emailCulomn" prefWidth="175.0" text="Email" />
         </columns>
       </TableView>
    </children>

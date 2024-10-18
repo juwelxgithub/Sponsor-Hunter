@@ -8,4 +8,10 @@ module com.seu.sponsor_hunter {
 
     opens com.seu.sponsor_hunter.controller to javafx.fxml;
     exports com.seu.sponsor_hunter.controller;
+
+    opens com.seu.sponsor_hunter.model to javafx.fxml;
+    exports com.seu.sponsor_hunter.model;
+
+    opens com.seu.sponsor_hunter.service to javafx.fxml;
+    exports com.seu.sponsor_hunter.service;
 }
