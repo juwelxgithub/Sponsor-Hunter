@@ -13,7 +13,7 @@ public class DashboardController {
 
     @FXML
     void clickRegister(ActionEvent event) {
-        Main.changeScene("influencerRegister",600,400);
+        Main.changeScene("influencerRegister",900,600);
     }
 
 }

@@ -5,19 +5,51 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.InfluencerRegisterController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.DashboardController">
    <children>
-      <Label alignment="CENTER" layoutX="147.0" layoutY="38.0" prefHeight="47.0" prefWidth="306.0" text="Influencer Registration">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" layoutX="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="300.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.729411780834198" green="0.32549020648002625" blue="0.43921568989753723" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.95686274766922" green="0.886274516582489" blue="0.8470588326454163" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickHire" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
          <font>
-            <Font name="System Bold" size="23.0" />
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" onAction="#clickRegister" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Register as Influencer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="121.0" layoutY="56.0" prefHeight="51.0" prefWidth="313.0" text="InfluencerRegister">
+         <font>
+            <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="227.0" layoutY="101.0" prefHeight="34.0" prefWidth="148.0" text="User Name" />
-      <Label layoutX="227.0" layoutY="192.0" prefHeight="34.0" prefWidth="148.0" text="Password" />
-      <Button layoutX="275.0" layoutY="296.0" mnemonicParsing="false" text="save" />
-      <TextField fx:id="userNameSignup" layoutX="227.0" layoutY="150.0" />
-      <PasswordField fx:id="passwordSignup" layoutX="227.0" layoutY="237.0" />
+      <Label layoutX="178.0" layoutY="138.0" prefHeight="41.0" prefWidth="200.0" text="User Name" />
+      <Label layoutX="178.0" layoutY="250.0" prefHeight="41.0" prefWidth="200.0" text="Password" />
+      <TextField layoutX="178.0" layoutY="191.0" prefHeight="41.0" prefWidth="208.0" />
+      <PasswordField layoutX="178.0" layoutY="298.0" prefHeight="51.0" prefWidth="208.0" />
+      <Button layoutX="226.0" layoutY="437.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="113.0" text="save" />
    </children>
 </AnchorPane>
