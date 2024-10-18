@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.DashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" layoutX="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="300.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.729411780834198" green="0.32549020648002625" blue="0.43921568989753723" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.95686274766922" green="0.886274516582489" blue="0.8470588326454163" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Register as Influencer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

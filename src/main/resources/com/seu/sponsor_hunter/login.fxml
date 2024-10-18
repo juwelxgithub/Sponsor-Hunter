@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.LoginController">
    <children>
       <Label alignment="CENTER" layoutX="216.0" layoutY="43.0" prefHeight="41.0" prefWidth="168.0" text="Sponsor Hunter">
@@ -20,7 +19,7 @@
       <Label layoutX="227.0" layoutY="200.0" prefHeight="30.0" prefWidth="147.0" text="Password" />
       <TextField fx:id="userNameLogin" layoutX="226.0" layoutY="151.0" />
       <PasswordField fx:id="passwordLogin" layoutX="226.0" layoutY="236.0" />
-      <Button layoutX="275.0" layoutY="285.0" mnemonicParsing="false" text="login" />
-      <Hyperlink layoutX="243.0" layoutY="338.0" text="Create a new accout" />
+      <Button layoutX="275.0" layoutY="285.0" mnemonicParsing="false" onAction="#clickLogin" text="login" />
+      <Hyperlink layoutX="243.0" layoutY="338.0" onAction="#newAccount" text="Create a new accout" />
    </children>
 </AnchorPane>
