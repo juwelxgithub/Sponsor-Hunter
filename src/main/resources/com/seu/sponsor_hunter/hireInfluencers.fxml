@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
@@ -8,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.DashboardController">
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.HireInfluencersController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" layoutX="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="300.0">
          <fill>
@@ -28,15 +30,23 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickHire" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
+      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" onAction="#clickRegister" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Register as Influencer">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Register as Influencer">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
+      <TableView prefHeight="600.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="171.0" text="Name" />
+          <TableColumn prefWidth="175.0" text="Phone" />
+            <TableColumn prefWidth="98.0" text="Following" />
+            <TableColumn prefWidth="155.0" text="Charge" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

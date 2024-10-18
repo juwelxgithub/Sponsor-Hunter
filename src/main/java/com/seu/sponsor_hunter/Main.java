@@ -15,7 +15,7 @@ public class Main extends Application {
         this.stage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Hello!");
+        stage.setTitle("Sponsor Hunter!");
         stage.setScene(scene);
         stage.show();
     }

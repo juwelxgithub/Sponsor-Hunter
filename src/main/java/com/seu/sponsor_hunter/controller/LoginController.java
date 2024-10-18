@@ -29,11 +29,13 @@ public class LoginController {
                 String password = info[1];
 
                 if(userNameLogin.getText().equals(username) && passwordLogin.getText().equals(password)){
-                    Main.changeScene("dashboard",600,400);
+                    Main.changeScene("dashboard",900,600);
 
                     //confirmation msg
                     System.out.println("Login Successful");
                     break;
+                }else {
+                    System.out.println("Invalid username or password");
                 }
             }
 
@@ -47,7 +49,7 @@ public class LoginController {
 
     @FXML
     void newAccount(ActionEvent event) {
-        Main.changeScene("signup",600,400);
+        Main.changeScene("signup",900,600);
     }
 
 }
