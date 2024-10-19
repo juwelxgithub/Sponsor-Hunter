@@ -14,4 +14,5 @@ module com.seu.sponsor_hunter {
 
     opens com.seu.sponsor_hunter.service to javafx.fxml;
     exports com.seu.sponsor_hunter.service;
+
 }

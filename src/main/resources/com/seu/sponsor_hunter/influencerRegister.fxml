@@ -3,59 +3,71 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.InfluencerRegisterController">
    <children>
+      <ImageView fx:id="bg" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/seu/sponsor_hunter/image/influencerRegistration.png" />
+         </image>
+      </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" layoutX="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="300.0">
          <fill>
-            <LinearGradient endX="1.0" endY="1.0">
+            <RadialGradient centerX="0.5" centerY="0.48578199052132703" radius="1.0">
                <stops>
                   <Stop>
                      <color>
-                        <Color red="0.729411780834198" green="0.32549020648002625" blue="0.43921568989753723" />
+                        <Color green="0.48235294222831726" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color green="0.48235294222831726" blue="1.0" />
                      </color>
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="0.95686274766922" green="0.886274516582489" blue="0.8470588326454163" />
+                        <Color red="0.01568627543747425" green="0.1764705926179886" blue="0.27843138575553894" />
                      </color>
                   </Stop>
                </stops>
-            </LinearGradient>
+            </RadialGradient>
          </fill>
       </Rectangle>
-      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickHire" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Hire Influencer">
+      <Button alignment="CENTER" layoutX="650.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickHire" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100; -fx-background-color: #032854;" text="Hire Influencer" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" onAction="#Dashboard" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Dashboard">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="650.0" layoutY="310.0" mnemonicParsing="false" onAction="#Dashboard" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100; -fx-background-color: #032854;" text="Dashboard" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="122.0" layoutY="22.0" prefHeight="51.0" prefWidth="313.0" text="Register">
+      <Label alignment="CENTER" layoutY="22.0" prefHeight="51.0" prefWidth="600.0" text="Register">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="179.0" layoutY="88.0" prefHeight="41.0" prefWidth="200.0" text="User Name" />
-      <Label layoutX="178.0" layoutY="290.0" prefHeight="41.0" prefWidth="200.0" text="Charge Amount" />
-      <TextField fx:id="userNameRegister" layoutX="178.0" layoutY="129.0" prefHeight="41.0" prefWidth="208.0" />
-      <Button layoutX="226.0" layoutY="518.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="41.0" prefWidth="113.0" text="save">
+      <Label layoutX="200.0" layoutY="88.0" prefHeight="41.0" prefWidth="200.0" text="User Name" />
+      <Label layoutX="196.0" layoutY="280.0" prefHeight="41.0" prefWidth="200.0" text="Charge Amount" />
+      <TextField fx:id="userNameRegister" layoutX="196.0" layoutY="129.0" prefHeight="41.0" prefWidth="208.0" />
+      <Button contentDisplay="CENTER" layoutX="240.0" layoutY="499.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-radius: 100; -fx-background-color: #032854;" text="Save" textFill="WHITE">
          <font>
-            <Font size="19.0" />
+            <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Label layoutX="178.0" layoutY="391.0" prefHeight="41.0" prefWidth="200.0" text="Follower" />
-      <TextField fx:id="followerRegister" layoutX="179.0" layoutY="432.0" prefHeight="41.0" prefWidth="208.0" />
-      <TextField fx:id="priceRegister" layoutX="179.0" layoutY="331.0" prefHeight="41.0" prefWidth="208.0" />
-      <Label layoutX="178.0" layoutY="180.0" prefHeight="41.0" prefWidth="200.0" text="Email" />
-      <TextField fx:id="emailRegister" layoutX="179.0" layoutY="221.0" prefHeight="41.0" prefWidth="208.0" />
+      <Label layoutX="196.0" layoutY="378.0" prefHeight="41.0" prefWidth="200.0" text="Follower" />
+      <TextField fx:id="followerRegister" layoutX="196.0" layoutY="419.0" prefHeight="41.0" prefWidth="208.0" />
+      <TextField fx:id="priceRegister" layoutX="196.0" layoutY="321.0" prefHeight="41.0" prefWidth="208.0" />
+      <Label layoutX="200.0" layoutY="180.0" prefHeight="41.0" prefWidth="200.0" text="Email" />
+      <TextField fx:id="emailRegister" layoutX="196.0" layoutY="221.0" prefHeight="41.0" prefWidth="208.0" />
    </children>
 </AnchorPane>

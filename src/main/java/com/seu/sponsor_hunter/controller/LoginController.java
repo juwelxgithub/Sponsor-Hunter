@@ -3,15 +3,23 @@ package com.seu.sponsor_hunter.controller;
 import com.seu.sponsor_hunter.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class LoginController {
+public class LoginController implements Initializable {
+
+    @FXML
+    private ImageView bg;
 
     @FXML
     private PasswordField passwordLogin;
@@ -62,4 +70,9 @@ public class LoginController {
         Main.changeScene("signup",600,400);
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        Image image = new Image("D:\\Programming\\Java\\SEU\\CSE281.5\\Projects\\Sponsor Hunter\\src\\main\\java\\com\\seu\\sponsor_hunter\\image\\login.png");
+        bg.setImage(image);
+    }
 }

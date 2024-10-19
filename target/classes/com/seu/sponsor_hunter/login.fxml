@@ -5,21 +5,31 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.LoginController">
    <children>
-      <Label alignment="CENTER" layoutX="216.0" layoutY="43.0" prefHeight="41.0" prefWidth="168.0" text="Sponsor Hunter">
+      <ImageView fx:id="bg" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/seu/sponsor_hunter/image/login.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="35.0" prefHeight="50.0" prefWidth="250.0" text="InfluencerConnect">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="227.0" layoutY="121.0" prefHeight="30.0" prefWidth="147.0" text="User Name" />
-      <Label layoutX="227.0" layoutY="200.0" prefHeight="30.0" prefWidth="147.0" text="Password" />
-      <TextField fx:id="userNameLogin" layoutX="226.0" layoutY="151.0" />
-      <PasswordField fx:id="passwordLogin" layoutX="226.0" layoutY="236.0" />
-      <Button layoutX="275.0" layoutY="285.0" mnemonicParsing="false" onAction="#clickLogin" text="login" />
-      <Hyperlink layoutX="243.0" layoutY="338.0" onAction="#newAccount" text="Create a new accout" />
+      <Label layoutX="223.0" layoutY="110.0" prefHeight="30.0" prefWidth="147.0" text="User Name" />
+      <Label layoutX="223.0" layoutY="192.0" prefHeight="30.0" prefWidth="147.0" text="Password" />
+      <TextField fx:id="userNameLogin" layoutX="222.0" layoutY="140.0" />
+      <PasswordField fx:id="passwordLogin" layoutX="222.0" layoutY="222.0" />
+      <Button layoutX="252.0" layoutY="285.0" mnemonicParsing="false" onAction="#clickLogin" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #032854; -fx-background-radius: 100;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Hyperlink layoutX="239.0" layoutY="341.0" onAction="#newAccount" text="Create a new accout" />
    </children>
 </AnchorPane>

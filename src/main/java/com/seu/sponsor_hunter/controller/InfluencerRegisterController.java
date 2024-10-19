@@ -7,12 +7,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
+import java.net.URL;
 import java.util.List;
+import java.util.ResourceBundle;
 
-public class InfluencerRegisterController {
+public class InfluencerRegisterController implements Initializable {
 
     @FXML
     private TextField emailRegister;
@@ -26,7 +31,7 @@ public class InfluencerRegisterController {
     @FXML
     private TextField userNameRegister;
     @FXML
-    private CheckBox agreeCheckBox;
+    private ImageView bg;
 
     @FXML
     void clickHire(ActionEvent event) {
@@ -64,6 +69,12 @@ public class InfluencerRegisterController {
         followerRegister.clear();
         priceRegister.clear();
         emailRegister.clear();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        Image image = new Image("D:\\Programming\\Java\\SEU\\CSE281.5\\Projects\\Sponsor Hunter\\src\\main\\java\\com\\seu\\sponsor_hunter\\image\\influencerRegistration.png");
+        bg.setImage(image);
     }
 }
 
