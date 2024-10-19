@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seu.sponsor_hunter.controller.HireInfluencersController">
    <children>
-      <Button alignment="CENTER" layoutX="686.0" layoutY="16.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Logout">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="791.0" layoutY="16.0" mnemonicParsing="false" onAction="#logout" prefHeight="41.0" prefWidth="95.0" style="-fx-background-radius: 100;" text="Logout">
          <font>
             <Font size="16.0" />
          </font>
@@ -24,9 +24,12 @@
             <TableColumn fx:id="checkBoxColumn" prefWidth="64.7999267578125" text="Select" />
         </columns>
       </TableView>
-      <Label layoutX="436.0" layoutY="28.0" text="Label" />
-      <Hyperlink layoutX="403.0" layoutY="553.0" onAction="#clickRegister" text="Register as Influencer" />
-      <Button alignment="CENTER" layoutX="364.0" layoutY="500.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Send Mail">
+      <Label alignment="CENTER" layoutX="339.0" layoutY="16.0" prefHeight="41.0" prefWidth="223.0" text="InfluencerConnect">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Hyperlink layoutX="389.0" layoutY="551.0" onAction="#registerAsInfluencer" text="Register as Influencer" />
+      <Button alignment="CENTER" layoutX="350.0" layoutY="500.0" mnemonicParsing="false" onAction="#sendMail" prefHeight="41.0" prefWidth="200.0" style="-fx-background-radius: 100;" text="Send Mail">
          <font>
             <Font size="16.0" />
          </font>

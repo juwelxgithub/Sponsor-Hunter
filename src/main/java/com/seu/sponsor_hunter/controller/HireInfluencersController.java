@@ -11,10 +11,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
@@ -40,7 +37,24 @@ public class HireInfluencersController implements Initializable {
     private TableColumn<Influencer, Boolean> checkBoxColumn;
 
     @FXML
-    void clickRegister(ActionEvent event) {
+    void logout(ActionEvent event) {
+        Main.changeScene("login",600,400);
+    }
+
+    @FXML
+    void sendMail(ActionEvent event){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Successful");
+        alert.setHeaderText("Congratulations");
+        alert.setContentText("Your mail was sent to the selected influencers. Thanks for using our service.");
+        alert.showAndWait();
+
+        //confirmation msg
+        System.out.println("Mail sent successfully");
+    }
+
+    @FXML
+    void registerAsInfluencer(ActionEvent event){
         Main.changeScene("influencerRegister",900,600);
     }
 

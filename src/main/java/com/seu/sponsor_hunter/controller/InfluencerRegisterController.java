@@ -34,6 +34,11 @@ public class InfluencerRegisterController {
     }
 
     @FXML
+    void Dashboard(){
+        Main.changeScene("dashboard",900,600);
+    }
+
+    @FXML
     void saveAction(ActionEvent event) {
         String email = emailRegister.getText();
         double follower = Double.parseDouble(followerRegister.getText());

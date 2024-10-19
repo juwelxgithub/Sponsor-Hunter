@@ -3,6 +3,7 @@ package com.seu.sponsor_hunter.controller;
 import com.seu.sponsor_hunter.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -35,7 +36,16 @@ public class LoginController {
                     System.out.println("Login Successful");
                     break;
                 }else {
+                    //alertbox
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error");
+                    alert.setHeaderText("Invalid username or password");
+                    alert.setContentText("Please check your username and password and try again.");
+                    alert.showAndWait();
+
+                    //confirmation msg
                     System.out.println("Invalid username or password");
+                    break;
                 }
             }
 
