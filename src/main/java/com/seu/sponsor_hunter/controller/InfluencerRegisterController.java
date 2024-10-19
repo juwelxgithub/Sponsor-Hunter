@@ -45,7 +45,7 @@ public class InfluencerRegisterController implements Initializable {
 
     @FXML
     void saveAction(ActionEvent event) {
-        String email = emailRegister.getText();
+        String email = "*******@gmail.com";//emailRegister.getText();
         double follower = Double.parseDouble(followerRegister.getText());
         double price = Double.parseDouble(priceRegister.getText());
         String name = userNameRegister.getText();
