@@ -63,6 +63,7 @@ public class HireInfluencersController implements Initializable {
                 } else {
                     checkBox.setSelected(item);
                     setGraphic(checkBox);
+                    setStyle("-fx-alignment: CENTER;");
                 }
             }
         });
