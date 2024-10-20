@@ -31,6 +31,7 @@ public class LoginController implements Initializable {
     void clickLogin(ActionEvent event) {
         try{
             RandomAccessFile raf = new RandomAccessFile("userInfo.txt", "r");
+            boolean loggedIn = false;
             String line;
             while((line = raf.readLine()) != null){
                 String[] info  = line.split(",");
@@ -39,22 +40,25 @@ public class LoginController implements Initializable {
 
                 if(userNameLogin.getText().equals(username) && passwordLogin.getText().equals(password)){
                     Main.changeScene("dashboard",900,600);
-
+                    loggedIn = true;
                     //confirmation msg
                     System.out.println("Login Successful");
                     break;
-                }else {
-                    //alertbox
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("Error");
-                    alert.setHeaderText("Invalid username or password");
-                    alert.setContentText("Please check your username and password and try again.");
-                    alert.showAndWait();
-
-                    //confirmation msg
-                    System.out.println("Invalid username or password");
-                    break;
                 }
+            }if(!loggedIn){
+                //alertbox
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Invalid username or password");
+                alert.setContentText("Please check your username and password and try again.");
+                alert.showAndWait();
+
+                //confirmation msg
+                System.out.println("Invalid username or password");
+
+                //clear screen
+                userNameLogin.clear();
+                passwordLogin.clear();
             }
 
         } catch (FileNotFoundException e) {
